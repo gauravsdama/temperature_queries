@@ -7,11 +7,11 @@
 using std::string, std::ostream;
 
 LinkedList::LinkedList() : head(nullptr), tail(nullptr) {
-	// TODO: implement this function
+	
 }
 
 LinkedList::~LinkedList() {
-	// TODO: implement this function
+	
 	clear();
 }
 
@@ -20,7 +20,7 @@ LinkedList::LinkedList(const LinkedList& source) : head(nullptr), tail(nullptr) 
 }
 
 LinkedList& LinkedList::operator=(const LinkedList& source) {
-	// TODO: implement this function
+	
 	if (this != &source) {
         clear();  // Deallocate existing nodes
         // Copy nodes from source if needed
@@ -29,7 +29,7 @@ LinkedList& LinkedList::operator=(const LinkedList& source) {
 }
 
 void LinkedList::insert(string location, int year, int month, double temperature) {
-	// TODO: implement this function
+	
 	Node* newNode = new Node(location, year, month, temperature);
 
     if (!head) {
@@ -58,7 +58,7 @@ void LinkedList::insert(string location, int year, int month, double temperature
 }
 
 void LinkedList::clear() {
-	// TODO: implement this function
+	
 	Node* current = head;
     while (current) {
         Node* next = current->next;
@@ -69,14 +69,14 @@ void LinkedList::clear() {
 }
 
 Node* LinkedList::getHead() const {
-	// TODO: implement this function, it will be used to help grade other functions
+	
 	return head;
 }
 
 string LinkedList::print() const {
 	string outputString;
 
-	// TODO: implement this function
+	
 	Node* current = head;
 	while (current) {
         std::ostringstream tempStream;
