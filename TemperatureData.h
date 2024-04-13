@@ -5,7 +5,7 @@
 
 struct TemperatureData {
 	public:
-		// TODO: add member variables as needed
+		
 		std::string id;
     	int year;
     	int month;
