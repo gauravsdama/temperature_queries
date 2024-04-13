@@ -8,7 +8,7 @@ TemperatureDatabase::TemperatureDatabase() {}
 TemperatureDatabase::~TemperatureDatabase() {}
 
 void TemperatureDatabase::loadData(const string& filename) {
-	// TODO: implement this function
+	
 	std::ifstream dataFile(filename);
 
     if (!dataFile.is_open()) {
@@ -93,5 +93,5 @@ void TemperatureDatabase::outputData(const string& filename) {
 }
 
 void TemperatureDatabase::performQuery(const string& filename) {
-	// TODO: implement this function
+
 }
